@@ -6,8 +6,7 @@ import { startHuobiWebSocket } from "./services/huobi";
 
 startBinanceWebSocket();
 startHuobiWebSocket();
-
-setTimeout(updateKrakenPrice());
+// if needed, add a setTimeout() with updateKrakenPrice(), to update kraken price every x ms.
 
 const app: Application = express();
 
